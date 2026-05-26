@@ -89,7 +89,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "U_BOOTLOADER";
             #binding-cells = <0>;
-            bindings = <&none>, <&u_bootloader>;
+            bindings = <&none>, <&bootloader>;
         };
 
         u_bt_sel_0: u_bt_sel_0 {
