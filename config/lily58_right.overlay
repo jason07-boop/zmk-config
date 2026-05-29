@@ -1,3 +1,5 @@
+#include "lily58.dtsi"
+
 / {
         right_encoder: right_encoder {
                 compatible = "alps,ec11";
@@ -13,4 +15,14 @@
                 steps = <80>;
                 status = "disabled";
         };
+};
+
+&kscan0 {
+    row-gpios
+        = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
 };
