@@ -1,5 +1,3 @@
-#include "lily58.dtsi"
-
 / {
         right_encoder: right_encoder {
                 compatible = "alps,ec11";
