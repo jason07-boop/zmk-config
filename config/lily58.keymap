@@ -17,14 +17,6 @@
     acceleration-exponent = <1>;
 };
 
-/ {
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <20>;
-    };
-};
-
 &nice_view_spi { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
 
 / {
