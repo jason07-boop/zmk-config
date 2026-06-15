@@ -18,7 +18,7 @@
     vbatt: vbatt {
         compatible = "zmk,battery-voltage-divider";
         label = "BATTERY";
-        io-channels = <&adc 2>; /* Try 0, 1, or 2 if battery doesn't show */
+        io-channels = <&adc 0>; /* Try 0, 1, or 2 if battery doesn't show */
         output-ohms = <2000000>;
         full-ohms = <2806000>;
     };
