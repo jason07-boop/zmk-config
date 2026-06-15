@@ -1,33 +1,28 @@
-/ {
-        right_encoder: right_encoder {
-                compatible = "alps,ec11";
-                a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-                b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-                steps = <80>;
-                status = "okay";
-        };
-        left_encoder: encoder_left {
-                compatible = "alps,ec11";
-                a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-                b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-                steps = <80>;
-                status = "disabled";
-        };
-};
-
 #include <dt-bindings/gpio/gpio.h>
 
 / {
-    /* Battery Voltage Divider for SuperMini */
+    /* --- Encoder Configuration --- */
+    left_encoder: encoder_left {
+        status = "disabled"; /* Disabled on Right */
+    };
+
+    right_encoder: right_encoder {
+        compatible = "alps,ec11";
+        a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "okay"; /* Enabled on Right */
+    };
+
+    /* --- SuperMini Power & Battery Fix --- */
     vbatt: vbatt {
         compatible = "zmk,battery-voltage-divider";
         label = "BATTERY";
-        io-channels = <&adc 2>; /* Pin A2 */
+        io-channels = <&adc 2>; /* Try 0, 1, or 2 if battery doesn't show */
         output-ohms = <2000000>;
         full-ohms = <2806000>;
     };
 
-    /* VCC Power Control (P0.13) to enable Deep Sleep */
     vcc_ctrl: vcc_ctrl {
         compatible = "gpio-leds";
         label = "VCC Power Control";
