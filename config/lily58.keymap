@@ -399,7 +399,7 @@
 &game_fkey11  &game_fkey1  &game_fkey2  &game_fkey3   &game_fkey4   &game_fkey5                             &game_fkey6    &game_fkey7      &game_fkey8  &game_fkey9  &game_fkey10   &game_fkey12
 &kp TAB       &kp T        &kp Q        &kp W         &kp E         &kp R                                   &kp Y          &kp U            &kp I        &kp O        &kp P          &kp BACKSLASH
 &kp LA(S)     &kp LSHFT    &kp A        &kp S         &kp D         &kp F                                   &kp H          &kp J            &kp K        &kp L        &kp SEMICOLON  &kp SQT
-&kp B         &kp LCTRL    &kp N        &kp X         &kp C         &kp V        &kp G        &u_to_U_base  &kp N          &kp M            &kp COMMA    &kp DOT      &kp SLASH      &kp RSHFT
+&kp B         &kp LCTRL    &kp Z        &kp X         &kp C         &kp V        &kp G        &u_to_U_base  &kp N          &kp M            &kp COMMA    &kp DOT      &kp SLASH      &kp RSHFT
                                         &kp LEFT_GUI  &kp LEFT_ALT  &kp MINUS    &kp SPACE    &kp ENTER     &kp BACKSPACE  &kp PRINTSCREEN  &kp RALT
             >;
 
