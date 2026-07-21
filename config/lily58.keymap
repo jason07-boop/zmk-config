@@ -315,20 +315,6 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
         };
-
-        tog_on: toggle_layer_on_only {
-            compatible = "zmk,behavior-layer-toggle";
-            #binding-cells = <1>;
-            toggle-mode = "on";
-            locking;
-        };
-        
-        tog_off: toggle_layer_off_only {
-            compatible = "zmk,behavior-layer-toggle";
-            #binding-cells = <1>;
-            toggle-mode = "off";
-            locking;
-        };
     };
 
     combos {
