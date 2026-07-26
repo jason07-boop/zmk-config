@@ -6,8 +6,6 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: m165437
       url-base: https://github.com/M165437
-    - name: jason07-boop
-      url-base: https://github.com/jason07-boop
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -17,9 +15,6 @@ manifest:
       remote: m165437
       revision: main
       path: nice-view-gem
-    - name: zmk-feature-appcompanion
-      remote: jason07-boop
-      revision: main
   self:
     path: config
     
