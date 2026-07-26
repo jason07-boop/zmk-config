@@ -6,6 +6,8 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: m165437
       url-base: https://github.com/M165437
+    - name: maatthc
+      url-base: https://github.com/maatthc
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,5 +17,9 @@ manifest:
       remote: m165437
       revision: main
       path: nice-view-gem
+    - name: zmk-feature-appcompanion
+      remote: maatthc
+      revision: main
   self:
     path: config
+    
