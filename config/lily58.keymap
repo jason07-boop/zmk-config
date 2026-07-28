@@ -422,7 +422,7 @@
         NAV {
             display-name = "Nav";
             bindings = <
-&none  &none          &none          &none         &none           &none                      &none          &none      &none          &none         &none      &none
+&none  &none          &none          &none         &none           &none                      &none          &none      &none          &none         &none      &u_bootloader
 &none  &u_bootloader  &u_to_U_extra  &u_to_U_game  &u_to_U_base    &none                      &kp LC(Y)      &kp LC(V)  &kp LC(C)      &kp LC(X)     &kp LC(Z)  &none
 &none  &kp LEFT_GUI   &kp LEFT_ALT   &kp LCTRL     &kp LEFT_SHIFT  &none                      &u_caps_word   &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none
 &none  &none          &kp RALT       &u_to_U_num   &u_to_U_nav     &none  &none    &none      &kp INS        &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none
